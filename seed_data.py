@@ -184,7 +184,7 @@ for idx,request in enumerate(add_invoice_requests):
 		endpoint='/api/v1/purchases/invoices',
 		method='POST',
 		response_filter=lambda response: response.json(),
-		data=json.dumps(request),
+		data=json.dumps([request]),
 		headers={"Content-Type": "application/json", "Authorization": "Bearer " + '{{ dag_run.conf["jwt"] }}'},
 		http_conn_id='brewcraft',
 		dag=dag))
@@ -206,7 +206,7 @@ for idx,request in enumerate(add_shipment_requests):
 		endpoint='/api/v1/purchases/shipments',
 		method='POST',
 		response_filter=lambda response: response.json(),
-		data=json.dumps(request),
+		data=json.dumps([request]),
 		headers={"Content-Type": "application/json", "Authorization": "Bearer " + '{{ dag_run.conf["jwt"] }}'},
 		http_conn_id='brewcraft',
 		dag=dag))
