@@ -1,0 +1,122 @@
+[
+   {
+      "name":"Fantastic Lager",
+      "description":"A delicious blend of our finest ingredients",
+      "categoryId":2,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Space Walk Lager",
+      "description":"Makes you feel like your floating in space",
+      "categoryId":2,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Blue Rainbow Lager",
+      "description":"A unique lager with sweet blueberry extract",
+      "categoryId":2,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Tree Top Ale",
+      "description":"Daves specialty ale",
+      "categoryId":3,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Area51 Ale",
+      "description":"Our newest ale aged for extra flavor",
+      "categoryId":3,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Watch Tower Ale",
+      "description":"Original recipe from 1922, a classic.",
+      "categoryId":3,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Submarine IPA",
+      "description":"Traditional German style IPA",
+      "categoryId":4,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Sidewalk Shuffle IPA",
+      "description":"A nice balance of Hops and Malts",
+      "categoryId":4,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Diamond Driller IPA",
+      "description":"Light and easy drinking",
+      "categoryId":4,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Stanly Stout",
+      "description":"Big hop flavor",
+      "categoryId":5,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Tripple S Stoute",
+      "description":"A stoute inspired by whiskey",
+      "categoryId":5,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Western Rodeo Stoute",
+      "description":"An old favorite with extra hops",
+      "categoryId":5,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Two Flag Porter",
+      "description":"A unique porter with a hint of vanilla",
+      "categoryId":6,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"Pinhead Porter",
+      "description":"A vancouver exclusive",
+      "categoryId":6,
+      "targetMeasures":[
+         
+      ]
+   },
+   {
+      "name":"House of Five Porter",
+      "description":"Spash of citrus with strong hop taste",
+      "categoryId":6,
+      "targetMeasures":[
+         
+      ]
+   }
+]

@@ -1,0 +1,212 @@
+[
+   {
+      "name":"Cannaco Barley",
+      "description":"2-row feed",
+      "categoryId":3,
+      "upc":"72527273070",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"GCD Barley",
+      "description":"2-row general purpose",
+      "categoryId":3,
+      "upc":"459387498845",
+      "baseQuantityUnit":"g"
+   },
+   {
+      "name":"West Ale Barley",
+      "description":"Organic 2-row general purpose",
+      "categoryId":3,
+      "upc":"459387498845",
+      "baseQuantityUnit":"g"
+   },
+   {
+      "name":"Apollo Hop",
+      "description":"Bitter with sweet aroma",
+      "categoryId":4,
+      "upc":"188274662938",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Bodicea Hop",
+      "description":"New Zeleand based firm bitterness",
+      "categoryId":4,
+      "upc":"122887449587",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Pacific Sunrise Hop",
+      "description":"A woody pine like profile",
+      "categoryId":4,
+      "upc":"584473304950",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Marley Malt",
+      "description":"Standard malt",
+      "categoryId":5,
+      "upc":"776493872234",
+      "baseQuantityUnit":"g"
+   },
+   {
+      "name":"TC Malt",
+      "description":"Extra fine base malt",
+      "categoryId":5,
+      "upc":"990287547284",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"C&C White Rice",
+      "description":"Just your ordinary white rice",
+      "categoryId":6,
+      "upc":"11487490059",
+      "baseQuantityUnit":"kg"
+   },  
+   {
+      "name":"AA Rye",
+      "description":"Low sweetness with grainy aroma",
+      "categoryId":7,
+      "upc":"233809748574",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Red Eye Rye",
+      "description":"A best seller and fan favorite",
+      "categoryId":7,
+      "upc":"38475999309",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Fresh Street Wheat",
+      "description":"Ordinary wheat",
+      "categoryId":10,
+      "upc":"001487484574",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Two Blend Wheat",
+      "description":"Top secret special blend",
+      "categoryId":10,
+      "upc":"443758604864",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"YellowStone Yeast Blend",
+      "description":"A wonderful Belgian yeast ale",
+      "categoryId":11,
+      "upc":"92875553949",
+      "baseQuantityUnit":"kg"
+   }, 
+   {
+      "name":"Burbank Ale Yeast",
+      "description":"Extra fine yeast",
+      "categoryId":11,
+      "upc":"11487490059",
+      "baseQuantityUnit":"kg"
+   },  
+   {
+      "name":"341ml Bottle",
+      "description":"",
+      "categoryId":12,
+      "upc":"285748957495",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"500ml Bottle",
+      "description":"",
+      "categoryId":12,
+      "upc":"118475849584",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"1L Bottle",
+      "description":"",
+      "categoryId":12,
+      "upc":"473659375849",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"341ml Can",
+      "description":"",
+      "categoryId":13,
+      "upc":"558476944829",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"710ml Can",
+      "description":"",
+      "categoryId":13,
+      "upc":"114859604496",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"1.89L Growler",
+      "description":"",
+      "categoryId":15,
+      "upc":"385537395937",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"5L Mini Keg",
+      "description":"",
+      "categoryId":16,
+      "upc":"285749586749",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"10L Keg",
+      "description":"",
+      "categoryId":16,
+      "upc":"385840504859",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"50L Keg",
+      "description":"",
+      "categoryId":16,
+      "upc":"257395740485",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"Fantastic Lager Label",
+      "description":"",
+      "categoryId":17,
+      "upc":"257395740485",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"Submarine IPA Label",
+      "description":"",
+      "categoryId":17,
+      "upc":"505844058305",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"Two Flag Porter",
+      "description":"",
+      "categoryId":17,
+      "upc":"375395736495",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"4-Pack Rings",
+      "description":"",
+      "categoryId":18,
+      "upc":"037363957363",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"6-Pack Rings",
+      "description":"",
+      "categoryId":18,
+      "upc":"726584759845",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"8-Pack Rings",
+      "description":"",
+      "categoryId":18,
+      "upc":"047365957365",
+      "baseQuantityUnit":"each"
+   }
+]

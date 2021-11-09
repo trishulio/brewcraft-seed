@@ -1,0 +1,19 @@
+[
+   {
+      "name":"Main Facility",
+      "address":{
+         "addressLine1":"1257 Westover Rd.",
+         "addressLine2":"",
+         "country":"Canada",
+         "province":"BC",
+         "city":"Vancouver",
+         "postalCode":"V6B 0T1"
+      },
+      "phoneNumber":"604-555-5475",
+      "faxNumber":"604-555-1453",
+      "equipment":[ 
+      ],
+      "storages":[
+      ]
+   }
+]

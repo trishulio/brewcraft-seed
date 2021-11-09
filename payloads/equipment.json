@@ -1,0 +1,137 @@
+[
+   {
+      "name":"Fermenter 1",
+      "type":"Fermenter",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":2.0
+      }
+   },
+   {
+      "name":"Fermenter 2",
+      "type":"Fermenter",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":2.0
+      }
+   },
+   {
+      "name":"Fermenter 3",
+      "type":"Fermenter",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":1.0
+      }
+   },
+   {
+      "name":"Kettle 1",
+      "type":"Boil Kettle",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":1.0
+      }
+   },
+   {
+      "name":"Kettle 2",
+      "type":"Boil Kettle",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":1.5
+      }
+   },
+   {
+      "name":"Kettle 3",
+      "type":"Boil Kettle",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":1.5
+      }
+   },
+   {
+      "name":"Mix Tank 1",
+      "type":"Mix Tank",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":2.0
+      }
+   },
+   {
+      "name":"Mix Tank 2",
+      "type":"Mix Tank",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":2.0
+      }
+   },
+   {
+      "name":"Mix Tank 3",
+      "type":"Mix Tank",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":1.0
+      }
+   },
+   {
+      "name":"Tote 1",
+      "type":"Tote",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"l",
+         "value":500.0
+      }
+   },
+   {
+      "name":"Tote 2",
+      "type":"Tote",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"l",
+         "value":500.0
+      }
+   },
+   {
+      "name":"Whirl Pool 1",
+      "type":"Whirl Pool",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":2.0
+      }
+   },
+   {
+      "name":"Whirl Pool 2",
+      "type":"Whirl Pool",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":2.0
+      }
+   },
+   {
+      "name":"Brite Tank 1",
+      "type":"Brite Tank",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":1.0
+      }
+   },
+   {
+      "name":"Brite Tank 2",
+      "type":"Brite Tank",
+      "status":"Active",
+      "maxCapacity":{
+         "symbol":"hl",
+         "value":3.0
+      }
+   }
+]

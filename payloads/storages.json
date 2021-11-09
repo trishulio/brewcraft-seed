@@ -1,0 +1,14 @@
+[
+   {
+      "name":"Main Storage",
+      "type":"General"
+   },
+   {
+      "name":"Side Storage",
+      "type":"General"
+   },
+   {
+      "name":"Back Freezer",
+      "type":"General"
+   }
+]
