@@ -176,8 +176,8 @@ add_invoice_requests = parseRequestsFromFile("invoices.json")
 invoiceTasks = []
 for idx,request in enumerate(add_invoice_requests):
 	#Inject materialIds into invoice payloads
-	request["items"][0]["materialId"] = request["items"][0]["materialId"].format(materialTasks[idx].task_id)
-	request["items"][1]["materialId"] = request["items"][1]["materialId"].format(materialTasks[idx + 1].task_id)
+	request["invoiceItems"][0]["materialId"] = request["invoiceItems"][0]["materialId"].format(materialTasks[idx].task_id)
+	request["invoiceItems"][1]["materialId"] = request["invoiceItems"][1]["materialId"].format(materialTasks[idx + 1].task_id)
 	
 	invoiceTasks.append(SimpleHttpOperator(
 		task_id='add_invoice_request_' + str(idx),

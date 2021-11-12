@@ -12,8 +12,8 @@
                "symbol":"kg",
                "value":12
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"C73641",
@@ -21,8 +21,8 @@
                "symbol":"kg",
                "value":4
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -39,8 +39,8 @@
                "symbol":"kg",
                "value":4
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"Z2846",
@@ -48,8 +48,8 @@
                "symbol":"kg",
                "value":22
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -66,8 +66,8 @@
                "symbol":"kg",
                "value":8
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"C12748",
@@ -75,8 +75,8 @@
                "symbol":"kg",
                "value":2
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -93,8 +93,8 @@
                "symbol":"kg",
                "value":12
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"F94823",
@@ -102,8 +102,8 @@
                "symbol":"kg",
                "value":12
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -120,8 +120,8 @@
                "symbol":"kg",
                "value":2
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"D28497",
@@ -129,8 +129,8 @@
                "symbol":"kg",
                "value":2
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -147,8 +147,8 @@
                "symbol":"kg",
                "value":4
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"P49003",
@@ -156,8 +156,8 @@
                "symbol":"kg",
                "value":5
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -174,8 +174,8 @@
                "symbol":"g",
                "value":500
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"A12847",
@@ -183,8 +183,8 @@
                "symbol":"g",
                "value":50
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -201,8 +201,8 @@
                "symbol":"kg",
                "value":11
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"R37763",
@@ -210,8 +210,8 @@
                "symbol":"each",
                "value":50
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -228,8 +228,8 @@
                "symbol":"each",
                "value":100
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"U87473",
@@ -237,8 +237,8 @@
                "symbol":"each",
                "value":200
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -255,8 +255,8 @@
                "symbol":"each",
                "value":45
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"Q27172",
@@ -264,8 +264,8 @@
                "symbol":"each",
                "value":99
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -282,8 +282,8 @@
                "symbol":"each",
                "value":220
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"H73661",
@@ -291,8 +291,8 @@
                "symbol":"each",
                "value":35
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -309,8 +309,8 @@
                "symbol":"each",
                "value":88
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"A38009",
@@ -318,8 +318,8 @@
                "symbol":"each",
                "value":43
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -336,8 +336,8 @@
                "symbol":"each",
                "value":500
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"E37948",
@@ -345,8 +345,8 @@
                "symbol":"each",
                "value":1000
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -363,8 +363,8 @@
                "symbol":"each",
                "value":99
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"V38493",
@@ -372,8 +372,8 @@
                "symbol":"each",
                "value":600
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    },
@@ -390,8 +390,8 @@
                "symbol":"each",
                "value":65
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][0]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][0]['id']}}}}"
          },
 		 {
             "lotNumber":"X37285",
@@ -399,8 +399,8 @@
                "symbol":"each",
                "value":200
             },
-            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['material']['id']}}}}",
-            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['items'][1]['id']}}}}"
+            "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['material']['id']}}}}",
+            "invoiceItemId":"{{{{task_instance.xcom_pull(task_ids='{}')['invoiceItems'][1]['id']}}}}"
          }
       ]
    }
