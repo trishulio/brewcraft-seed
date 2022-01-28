@@ -46,6 +46,7 @@ start_supplier_requests_task = DummyOperator(task_id='start_supplier_requests',r
 start_supplier_contact_requests_task = DummyOperator(task_id='start_supplier_contact_requests',retries=3, dag=dag)
 start_material_requests_task = DummyOperator(task_id='start_material_requests',retries=3, dag=dag)
 start_product_requests_task = DummyOperator(task_id='start_product_requests',retries=3, dag=dag)
+start_sku_requests_task = DummyOperator(task_id='start_sku_requests',retries=3, dag=dag)
 start_invoice_requests_task = DummyOperator(task_id='start_invoice_requests',retries=3, dag=dag)
 start_shipment_requests_task = DummyOperator(task_id='start_shipment_requests',retries=3, dag=dag)
 
@@ -56,10 +57,10 @@ supplier_requests_complete_task = DummyOperator(task_id='supplier_requests_compl
 supplier_contact_requests_complete_task = DummyOperator(task_id='supplier_contact_requests_complete',retries=3, dag=dag)
 material_requests_complete_task = DummyOperator(task_id='material_requests_complete',retries=3, dag=dag)
 product_requests_complete_task = DummyOperator(task_id='product_requests_complete',retries=3, dag=dag)
+sku_requests_complete_task = DummyOperator(task_id='sku_requests_complete',retries=3, dag=dag)
 invoice_requests_complete_task = DummyOperator(task_id='invoice_requests_complete',retries=3, dag=dag)
 shipment_requests_complete_task = DummyOperator(task_id='shipment_requests_complete',retries=3, dag=dag)
 
-	
 add_facility_requests = parseRequestsFromFile("facilities.json")
 facilityTasks = []
 for idx,request in enumerate(add_facility_requests):
@@ -172,6 +173,26 @@ for idx,request in enumerate(add_product_requests):
 	productTasks[idx] >> product_requests_complete_task
 	
 	
+add_sku_requests = parseRequestsFromFile("skus.json")
+skuTasks = []
+for idx,request in enumerate(add_sku_requests):
+	#Inject product ids and names into sku payloads
+	request["productId"] = request["productId"].format(productTasks[idx].task_id)
+	request["description"] = request["description"].format(productTasks[idx].task_id)
+
+	skuTasks.append(SimpleHttpOperator(
+		task_id='add_sku_request_' + str(idx),
+		endpoint='/api/v1/skus',
+		method='POST',
+		response_filter=lambda response: response.json(),
+		data=json.dumps(request),
+		headers={"Content-Type": "application/json", "Authorization": "Bearer " + '{{ dag_run.conf["jwt"] }}'},
+		http_conn_id='brewcraft',
+		dag=dag))
+	start_sku_requests_task >> skuTasks[idx]
+	skuTasks[idx] >> sku_requests_complete_task	
+	
+
 add_invoice_requests = parseRequestsFromFile("invoices.json")
 invoiceTasks = []
 for idx,request in enumerate(add_invoice_requests):
@@ -226,5 +247,7 @@ supplier_requests_complete_task >> start_supplier_contact_requests_task
 
 material_requests_complete_task >> start_invoice_requests_task
 material_requests_complete_task >> start_shipment_requests_task
+
+product_requests_complete_task >> start_sku_requests_task
 
 invoice_requests_complete_task >> start_shipment_requests_task

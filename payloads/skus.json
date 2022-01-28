@@ -1,0 +1,102 @@
+[
+    {
+        "name": "01288155",
+        "description": "Single can {{{{task_instance.xcom_pull(task_ids='{}')['name']}}}}",
+        "productId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
+        "materials": [],
+        "quantity": {
+            "value": 355,
+            "symbol": "ml"
+        }
+    },
+    {
+        "name": "05284702",
+        "description": "Single bottle {{{{task_instance.xcom_pull(task_ids='{}')['name']}}}}",
+        "productId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
+        "materials": [],
+        "quantity": {
+            "value": 341,
+            "symbol": "ml"
+        }
+    },
+    {
+        "name": "17580435",
+        "description": "Single keg {{{{task_instance.xcom_pull(task_ids='{}')['name']}}}}",
+        "productId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
+        "materials": [],
+        "quantity": {
+            "value": 50,
+            "symbol": "l"
+        }
+    },
+    {
+        "name": "17580446",
+        "description": "6-pack cans {{{{task_instance.xcom_pull(task_ids='{}')['name']}}}}",
+        "productId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
+        "materials": [],
+        "quantity": {
+            "value": 2130,
+            "symbol": "ml"
+        }
+    },
+    {
+        "name": "42124811",
+        "description": "12-pack cans {{{{task_instance.xcom_pull(task_ids='{}')['name']}}}}",
+        "productId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
+        "materials": [],
+        "quantity": {
+            "value": 4260,
+            "symbol": "ml"
+        }
+    },
+    {
+        "name": "09918373",
+        "description": "Single can {{{{task_instance.xcom_pull(task_ids='{}')['name']}}}}",
+        "productId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
+        "materials": [],
+        "quantity": {
+            "value": 355,
+            "symbol": "ml"
+        }
+    },
+    {
+        "name": "01848483",
+        "description": "Single bottle {{{{task_instance.xcom_pull(task_ids='{}')['name']}}}}",
+        "productId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
+        "materials": [],
+        "quantity": {
+            "value": 341,
+            "symbol": "ml"
+        }
+    },
+    {
+        "name": "11947505",
+        "description": "Single keg {{{{task_instance.xcom_pull(task_ids='{}')['name']}}}}",
+        "productId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
+        "materials": [],
+        "quantity": {
+            "value": 50,
+            "symbol": "l"
+        }
+    },
+    {
+        "name": "12958465",
+        "description": "6-pack cans {{{{task_instance.xcom_pull(task_ids='{}')['name']}}}}",
+        "productId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
+        "materials": [],
+        "quantity": {
+            "value": 2130,
+            "symbol": "ml"
+        }
+    },
+    {
+        "name": "44250884",
+        "description": "12-pack cans {{{{task_instance.xcom_pull(task_ids='{}')['name']}}}}",
+        "productId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
+        "materials": [],
+        "quantity": {
+            "value": 4260,
+            "symbol": "ml"
+        }
+    }
+]
