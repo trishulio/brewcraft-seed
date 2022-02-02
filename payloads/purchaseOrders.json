@@ -1,0 +1,82 @@
+[
+    {
+        "orderNumber": "ORDER_1",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_2",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_3",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_4",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_5",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_6",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_7",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_8",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_9",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_10",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_11",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_12",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_13",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_14",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_15",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_16",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_17",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_18",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_19",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "ORDER_20",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    }
+]

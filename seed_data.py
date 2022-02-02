@@ -3,7 +3,7 @@
 # Conn type = http
 # Host = apollo.brewcraft.io (or other base url for brewcraft)
 # Schema = https (or http)
-# 
+#
 # Trigger DAG with config values:
 # {"jwt": "<YOUR_JWT_HERE>"}
 #
@@ -36,7 +36,7 @@ default_args = {
 dag = DAG('brewcraft_seed_data',
     schedule_interval=None,
     default_args=default_args)
-		
+
 start_task = DummyOperator(task_id='start',retries=3, dag=dag)
 
 start_facility_requests_task = DummyOperator(task_id='start_facility_requests',retries=3, dag=dag)
@@ -47,8 +47,6 @@ start_supplier_contact_requests_task = DummyOperator(task_id='start_supplier_con
 start_material_requests_task = DummyOperator(task_id='start_material_requests',retries=3, dag=dag)
 start_product_requests_task = DummyOperator(task_id='start_product_requests',retries=3, dag=dag)
 start_sku_requests_task = DummyOperator(task_id='start_sku_requests',retries=3, dag=dag)
-start_invoice_requests_task = DummyOperator(task_id='start_invoice_requests',retries=3, dag=dag)
-start_shipment_requests_task = DummyOperator(task_id='start_shipment_requests',retries=3, dag=dag)
 
 facility_requests_complete_task = DummyOperator(task_id='facility_requests_complete',retries=3, dag=dag)
 equipment_requests_complete_task = DummyOperator(task_id='equipment_requests_complete',retries=3, dag=dag)
@@ -58,8 +56,7 @@ supplier_contact_requests_complete_task = DummyOperator(task_id='supplier_contac
 material_requests_complete_task = DummyOperator(task_id='material_requests_complete',retries=3, dag=dag)
 product_requests_complete_task = DummyOperator(task_id='product_requests_complete',retries=3, dag=dag)
 sku_requests_complete_task = DummyOperator(task_id='sku_requests_complete',retries=3, dag=dag)
-invoice_requests_complete_task = DummyOperator(task_id='invoice_requests_complete',retries=3, dag=dag)
-shipment_requests_complete_task = DummyOperator(task_id='shipment_requests_complete',retries=3, dag=dag)
+
 
 add_facility_requests = parseRequestsFromFile("facilities.json")
 facilityTasks = []
@@ -91,7 +88,7 @@ for idx,request in enumerate(add_equipment_requests):
 		dag=dag))
 	start_equipment_requests_task >> equipmentTasks[idx]
 	equipmentTasks[idx] >> equipment_requests_complete_task
-	
+
 
 add_storage_requests = parseRequestsFromFile("storages.json")
 storageTasks = []
@@ -107,7 +104,7 @@ for idx,request in enumerate(add_storage_requests):
 		dag=dag))
 	start_storage_requests_task >> storageTasks[idx]
 	storageTasks[idx] >> storage_requests_complete_task
-	
+
 
 add_supplier_requests = parseRequestsFromFile("suppliers.json")
 supplierTasks = []
@@ -123,8 +120,8 @@ for idx,request in enumerate(add_supplier_requests):
 		dag=dag))
 	start_supplier_requests_task >> supplierTasks[idx]
 	supplierTasks[idx] >> supplier_requests_complete_task
-	
-	
+
+
 add_supplier_contact_requests = parseRequestsFromFile("suppliercontacts.json")
 supplierContactTasks = []
 for idx,request in enumerate(add_supplier_contact_requests):
@@ -139,8 +136,8 @@ for idx,request in enumerate(add_supplier_contact_requests):
 		dag=dag))
 	start_supplier_contact_requests_task >> supplierContactTasks[idx]
 	supplierContactTasks[idx] >> supplier_contact_requests_complete_task
-	
-	
+
+
 add_material_requests = parseRequestsFromFile("materials.json")
 materialTasks = []
 for idx,request in enumerate(add_material_requests):
@@ -155,8 +152,8 @@ for idx,request in enumerate(add_material_requests):
 		dag=dag))
 	start_material_requests_task >> materialTasks[idx]
 	materialTasks[idx] >> material_requests_complete_task
-	
-	
+
+
 add_product_requests = parseRequestsFromFile("products.json")
 productTasks = []
 for idx,request in enumerate(add_product_requests):
@@ -171,8 +168,8 @@ for idx,request in enumerate(add_product_requests):
 		dag=dag))
 	start_product_requests_task >> productTasks[idx]
 	productTasks[idx] >> product_requests_complete_task
-	
-	
+
+
 add_sku_requests = parseRequestsFromFile("skus.json")
 skuTasks = []
 for idx,request in enumerate(add_sku_requests):
@@ -191,48 +188,38 @@ for idx,request in enumerate(add_sku_requests):
 		dag=dag))
 	start_sku_requests_task >> skuTasks[idx]
 	skuTasks[idx] >> sku_requests_complete_task	
-	
 
-add_invoice_requests = parseRequestsFromFile("invoices.json")
-invoiceTasks = []
-for idx,request in enumerate(add_invoice_requests):
-	#Inject materialIds into invoice payloads
-	request["invoiceItems"][0]["materialId"] = request["invoiceItems"][0]["materialId"].format(materialTasks[idx].task_id)
-	request["invoiceItems"][1]["materialId"] = request["invoiceItems"][1]["materialId"].format(materialTasks[idx + 1].task_id)
-	
-	invoiceTasks.append(SimpleHttpOperator(
-		task_id='add_invoice_request_' + str(idx),
-		endpoint='/api/v1/purchases/invoices',
-		method='POST',
-		response_filter=lambda response: response.json(),
-		data=json.dumps([request]),
-		headers={"Content-Type": "application/json", "Authorization": "Bearer " + '{{ dag_run.conf["jwt"] }}'},
-		http_conn_id='brewcraft',
-		dag=dag))
-	start_invoice_requests_task >> invoiceTasks[idx]
-	invoiceTasks[idx] >> invoice_requests_complete_task
-	
-	
-add_shipment_requests = parseRequestsFromFile("shipments.json")
-shipmentTasks = []
-for idx,request in enumerate(add_shipment_requests):
-	#Inject materialIds and invoiceItemIds into shipment payloads
-	request["lots"][0]["materialId"] = request["lots"][0]["materialId"].format(invoiceTasks[idx].task_id)
-	request["lots"][1]["materialId"] = request["lots"][1]["materialId"].format(invoiceTasks[idx].task_id)
-	request["lots"][0]["invoiceItemId"] = request["lots"][0]["invoiceItemId"].format(invoiceTasks[idx].task_id)
-	request["lots"][1]["invoiceItemId"] = request["lots"][1]["invoiceItemId"].format(invoiceTasks[idx].task_id)
-	
-	shipmentTasks.append(SimpleHttpOperator(
-		task_id='add_shipment_request_' + str(idx),
-		endpoint='/api/v1/purchases/shipments',
-		method='POST',
-		response_filter=lambda response: response.json(),
-		data=json.dumps([request]),
-		headers={"Content-Type": "application/json", "Authorization": "Bearer " + '{{ dag_run.conf["jwt"] }}'},
-		http_conn_id='brewcraft',
-		dag=dag))
-	start_shipment_requests_task >> shipmentTasks[idx]
-	shipmentTasks[idx] >> shipment_requests_complete_task
+
+add_purchase_order_requests = parseRequestsFromFile("purchaseOrders.json")
+for idx, purchase_order in enumerate(add_purchase_order_requests):
+	purchase_order['supplierId'] = purchase_order['supplierId'].format(supplierTasks[idx].task_id)
+purchase_orders_task = SimpleHttpOperator(
+	task_id='add_purchase_orders_request',
+	endpoint='/api/v1/purchases/orders/',
+	method='POST',
+	response_filter=lambda response: response.json(),
+	data=json.dumps(add_purchase_order_requests),
+	headers={"Content-Type": "application/json", "Authorization": "Bearer " + '{{ dag_run.conf["jwt"] }}'},
+	http_conn_id='brewcraft',
+	dag=dag)
+
+material_idx = 0
+add_procurements_requests = parseRequestsFromFile("procurements.json")
+for procurement in add_procurements_requests:
+	procurement['invoice']['purchaseOrderId'] = procurement['invoice']['purchaseOrderId'].format(purchase_orders_task.task_id)
+	for procurement_item in procurement['procurementItems']:
+		procurement_item['invoiceItem']['materialId'] = procurement_item['invoiceItem']['materialId'].format(materialTasks[material_idx].task_id)
+		material_idx = material_idx + 1
+
+procurements_task = SimpleHttpOperator(
+	task_id='add_procurements_request',
+	endpoint='/api/v1/procurements/',
+	method='POST',
+	response_filter=lambda response: response.json(),
+	data=json.dumps(add_procurements_requests),
+	headers={"Content-Type": "application/json", "Authorization": "Bearer " + '{{ dag_run.conf["jwt"] }}'},
+	http_conn_id='brewcraft',
+	dag=dag)
 
 
 start_task >> start_facility_requests_task
@@ -243,11 +230,8 @@ start_task >> start_product_requests_task
 facility_requests_complete_task >> start_equipment_requests_task
 facility_requests_complete_task >> start_storage_requests_task
 
-supplier_requests_complete_task >> start_supplier_contact_requests_task
-
-material_requests_complete_task >> start_invoice_requests_task
-material_requests_complete_task >> start_shipment_requests_task
-
 product_requests_complete_task >> start_sku_requests_task
 
-invoice_requests_complete_task >> start_shipment_requests_task
+supplier_requests_complete_task >> start_supplier_contact_requests_task
+supplier_requests_complete_task >> purchase_orders_task
+purchase_orders_task >> procurements_task

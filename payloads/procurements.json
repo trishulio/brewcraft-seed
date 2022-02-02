@@ -1,0 +1,1621 @@
+[
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_1",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[0]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_1",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_2",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[1]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_2",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_3",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[2]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_3",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_4",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[3]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_4",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_5",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[4]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_5",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_6",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[5]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_6",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_7",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[6]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_7",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_8",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[7]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_8",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_9",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[8]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_9",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_10",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[9]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_10",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_11",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[10]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_11",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_12",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[11]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_12",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_13",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[12]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_13",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_14",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[13]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_14",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_15",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[14]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_15",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_16",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[15]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_16",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_17",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[16]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_17",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_18",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[17]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_18",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_19",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[18]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_19",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    },
+
+    {
+        "invoice": {
+            "invoiceNumber": "INVOICE_NUMBER_20",
+            "description": "Invoice Description",
+            "freight": {
+                "amount": {
+                    "currency": "CAD",
+                    "amount": 100
+                }
+            },
+            "generatedOn": "2022-01-12T00:00:00.001Z",
+            "receivedOn": "2022-01-12T00:00:00.001Z",
+            "paymentDueDate": "2022-01-12T00:00:00.001Z",
+            "invoiceStatusId": "2",
+            "purchaseOrderId": "{{{{task_instance.xcom_pull(task_ids='{}')[19]['id']}}}}"
+        },
+        "shipment": {
+            "shipmentNumber": "SHIPMENT_NUMBER_20",
+            "description": "Shipment Description",
+            "shipmentStatusId": 1,
+            "deliveryDueDate": "2022-01-12T00:00:00.001Z",
+            "deliveredDate": "2022-01-12T00:00:00.001Z"
+        },
+        "procurementItems": [
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 1",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 100
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 10
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_A",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 100
+                    }
+                }
+            },
+            {
+                "invoiceItem": {
+                    "description": "Invoice Item Description 2",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    },
+                    "price": {
+                        "currency": "CAD",
+                        "amount": 200
+                    },
+                    "tax": {
+                        "amount": {
+                            "currency": "CAD",
+                            "amount": 20
+                        }
+                    },
+                    "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+                },
+                "materialLot": {
+                    "lotNumber": "LOT_NUMBER_B",
+                    "quantity": {
+                        "symbol": "kg",
+                        "value": 200
+                    }
+                }
+            }
+        ]
+    }
+]
