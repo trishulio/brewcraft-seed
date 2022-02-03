@@ -109,174 +109,174 @@
       "description":"",
       "categoryId":12,
       "upc":"285748957495",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"500ml Bottle",
       "description":"",
       "categoryId":12,
       "upc":"118475849584",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"1L Bottle",
       "description":"",
       "categoryId":12,
       "upc":"473659375849",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"341ml Can",
       "description":"",
       "categoryId":13,
       "upc":"558476944829",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"710ml Can",
       "description":"",
       "categoryId":13,
       "upc":"114859604496",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"1.89L Growler",
       "description":"",
       "categoryId":15,
       "upc":"385537395937",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"5L Mini Keg",
       "description":"",
       "categoryId":16,
       "upc":"285749586749",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"10L Keg",
       "description":"",
       "categoryId":16,
       "upc":"385840504859",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"50L Keg",
       "description":"",
       "categoryId":16,
       "upc":"257395740485",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"Fantastic Lager Label",
       "description":"",
       "categoryId":17,
       "upc":"257395740485",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"Submarine IPA Label",
       "description":"",
       "categoryId":17,
       "upc":"505844058305",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"Two Flag Porter",
       "description":"",
       "categoryId":17,
       "upc":"375395736495",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"4-Pack Rings",
       "description":"",
       "categoryId":18,
       "upc":"037363957363",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"6-Pack Rings",
       "description":"",
       "categoryId":18,
       "upc":"726584759845",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"8-Pack Rings",
       "description":"",
       "categoryId":18,
       "upc":"047365957365",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"Flaked Oats",
       "description":"",
-      "categoryId":18,
+      "categoryId": 3,
       "upc":"047365957365",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    },
    {
       "name":"Carapils Malt",
       "description":"",
-      "categoryId":18,
+      "categoryId":5,
       "upc":"047365957365",
       "baseQuantityUnit":"kg"
    },
    {
       "name":"Cascade Hops",
       "description":"",
-      "categoryId":18,
+      "categoryId":4,
       "upc":"047365957365",
       "baseQuantityUnit":"kg"
    },
    {
       "name":"German Munich Malt",
       "description":"",
-      "categoryId":18,
+      "categoryId":5,
       "upc":"047365957365",
       "baseQuantityUnit":"kg"
    },
    {
       "name":"Rice Hulls",
       "description":"",
-      "categoryId":18,
+      "categoryId":6,
       "upc":"047365957365",
       "baseQuantityUnit":"kg"
    },
    {
       "name":"Otter Pale Ale Malt",
       "description":"",
-      "categoryId":18,
+      "categoryId":5,
       "upc":"047365957365",
       "baseQuantityUnit":"kg"
    },
    {
       "name":"Flaked Corn",
       "description":"",
-      "categoryId":18,
+      "categoryId":1,
       "upc":"047365957365",
       "baseQuantityUnit":"kg"
    },
    {
       "name":"Caramel Malt",
       "description":"",
-      "categoryId":18,
+      "categoryId":5,
       "upc":"047365957365",
       "baseQuantityUnit":"kg"
    },
    {
       "name":"Gypsum",
       "description":"",
-      "categoryId":18,
+      "categoryId":1,
       "upc":"047365957365",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"g"
    },
    {
       "name":"Mesh Bag",
       "description":"",
-      "categoryId":18,
+      "categoryId":2,
       "upc":"047365957365",
-      "baseQuantityUnit":"kg"
+      "baseQuantityUnit":"each"
    }
 ]
