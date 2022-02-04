@@ -209,6 +209,10 @@ for procurement in add_procurements_requests:
 	procurement['invoice']['purchaseOrderId'] = procurement['invoice']['purchaseOrderId'].format(purchase_orders_task.task_id)
 	for procurement_item in procurement['procurementItems']:
 		procurement_item['invoiceItem']['materialId'] = procurement_item['invoiceItem']['materialId'].format(materialTasks[material_idx].task_id)
+
+		procurement_item['materialLot']['quantity']['symbol'] = procurement_item['materialLot']['quantity']['symbol'].format(add_material_requests[material_idx]['baseQuantityUnit'])
+		procurement_item['invoiceItem']['quantity']['symbol'] = procurement_item['invoiceItem']['quantity']['symbol'].format(add_material_requests[material_idx]['baseQuantityUnit'])
+
 		material_idx = material_idx + 1
 
 procurements_task = SimpleHttpOperator(
@@ -235,3 +239,4 @@ product_requests_complete_task >> start_sku_requests_task
 supplier_requests_complete_task >> start_supplier_contact_requests_task
 supplier_requests_complete_task >> purchase_orders_task
 purchase_orders_task >> procurements_task
+material_requests_complete_task >> procurements_task
