@@ -1,0 +1,82 @@
+[
+    {
+        "orderNumber": "JADC - P100011",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100012",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100013",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100014",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100015",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100016",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100017",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100018",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100019",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100110",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100111",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100112",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100113",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100114",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100115",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100116",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100117",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100118",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100119",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    },
+    {
+        "orderNumber": "JADC - P100120",
+        "supplierId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
+    }
+]

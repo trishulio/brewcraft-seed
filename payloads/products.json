@@ -4,7 +4,7 @@
       "description":"A delicious blend of our finest ingredients",
       "categoryId":2,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -12,7 +12,7 @@
       "description":"Makes you feel like your floating in space",
       "categoryId":2,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -20,7 +20,7 @@
       "description":"A unique lager with sweet blueberry extract",
       "categoryId":2,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -28,7 +28,7 @@
       "description":"Daves specialty ale",
       "categoryId":3,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -36,7 +36,7 @@
       "description":"Our newest ale aged for extra flavor",
       "categoryId":3,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -44,7 +44,7 @@
       "description":"Original recipe from 1922, a classic.",
       "categoryId":3,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -52,7 +52,7 @@
       "description":"Traditional German style IPA",
       "categoryId":4,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -60,7 +60,7 @@
       "description":"A nice balance of Hops and Malts",
       "categoryId":4,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -68,7 +68,7 @@
       "description":"Light and easy drinking",
       "categoryId":4,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -76,7 +76,7 @@
       "description":"Big hop flavor",
       "categoryId":5,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -84,7 +84,7 @@
       "description":"A stoute inspired by whiskey",
       "categoryId":5,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -92,7 +92,7 @@
       "description":"An old favorite with extra hops",
       "categoryId":5,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -100,7 +100,7 @@
       "description":"A unique porter with a hint of vanilla",
       "categoryId":6,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -108,7 +108,7 @@
       "description":"A vancouver exclusive",
       "categoryId":6,
       "targetMeasures":[
-         
+
       ]
    },
    {
@@ -116,7 +116,7 @@
       "description":"Spash of citrus with strong hop taste",
       "categoryId":6,
       "targetMeasures":[
-         
+
       ]
    }
 ]

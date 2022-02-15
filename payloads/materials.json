@@ -61,7 +61,7 @@
       "categoryId":6,
       "upc":"11487490059",
       "baseQuantityUnit":"kg"
-   },  
+   },
    {
       "name":"AA Rye",
       "description":"Low sweetness with grainy aroma",
@@ -96,14 +96,14 @@
       "categoryId":11,
       "upc":"92875553949",
       "baseQuantityUnit":"kg"
-   }, 
+   },
    {
       "name":"Burbank Ale Yeast",
       "description":"Extra fine yeast",
       "categoryId":11,
       "upc":"11487490059",
       "baseQuantityUnit":"kg"
-   },  
+   },
    {
       "name":"341ml Bottle",
       "description":"",
@@ -206,6 +206,76 @@
       "name":"8-Pack Rings",
       "description":"",
       "categoryId":18,
+      "upc":"047365957365",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"Flaked Oats",
+      "description":"",
+      "categoryId": 3,
+      "upc":"047365957365",
+      "baseQuantityUnit":"each"
+   },
+   {
+      "name":"Carapils Malt",
+      "description":"",
+      "categoryId":5,
+      "upc":"047365957365",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Cascade Hops",
+      "description":"",
+      "categoryId":4,
+      "upc":"047365957365",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"German Munich Malt",
+      "description":"",
+      "categoryId":5,
+      "upc":"047365957365",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Rice Hulls",
+      "description":"",
+      "categoryId":6,
+      "upc":"047365957365",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Otter Pale Ale Malt",
+      "description":"",
+      "categoryId":5,
+      "upc":"047365957365",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Flaked Corn",
+      "description":"",
+      "categoryId":1,
+      "upc":"047365957365",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Caramel Malt",
+      "description":"",
+      "categoryId":5,
+      "upc":"047365957365",
+      "baseQuantityUnit":"kg"
+   },
+   {
+      "name":"Gypsum",
+      "description":"",
+      "categoryId":1,
+      "upc":"047365957365",
+      "baseQuantityUnit":"g"
+   },
+   {
+      "name":"Mesh Bag",
+      "description":"",
+      "categoryId":2,
       "upc":"047365957365",
       "baseQuantityUnit":"each"
    }
