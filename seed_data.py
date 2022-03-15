@@ -175,7 +175,7 @@ skuTasks = []
 for idx,request in enumerate(add_sku_requests):
 	#Inject product ids and names into sku payloads
 	request["productId"] = request["productId"].format(productTasks[idx].task_id)
-	request["description"] = request["description"].format(productTasks[idx].task_id)
+	request["name"] = request["name"].format(productTasks[idx].task_id)
 
 	skuTasks.append(SimpleHttpOperator(
 		task_id='add_sku_request_' + str(idx),
