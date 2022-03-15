@@ -9,7 +9,7 @@
             "value": 355,
             "symbol": "ml"
         },
-	"isPrimary": true
+	"isPackageable": true
     },
     {
         "number": "05284702",
@@ -21,7 +21,7 @@
             "value": 341,
             "symbol": "ml"
         },
-	"isPrimary": true
+	"isPackageable": true
     },
     {
         "number": "17580435",
@@ -33,7 +33,7 @@
             "value": 50,
             "symbol": "l"
         },
-	"isPrimary": true
+	"isPackageable": true
     },
     {
         "number": "17580446",
@@ -45,7 +45,7 @@
             "value": 2130,
             "symbol": "ml"
         },
-	"isPrimary": false
+	"isPackageable": false
     },
     {
         "number": "42124811",
@@ -57,7 +57,7 @@
             "value": 4260,
             "symbol": "ml"
         },
-	"isPrimary": false
+	"isPackageable": false
     },
     {
         "number": "09918373",
@@ -69,7 +69,7 @@
             "value": 355,
             "symbol": "ml"
         },
-	"isPrimary": true
+	"isPackageable": true
     },
     {
         "number": "01848483",
@@ -81,7 +81,7 @@
             "value": 341,
             "symbol": "ml"
         },
-	"isPrimary": true
+	"isPackageable": true
     },
     {
         "number": "11947505",
@@ -93,7 +93,7 @@
             "value": 50,
             "symbol": "l"
         },
-	"isPrimary": true
+	"isPackageable": true
     },
     {
         "number": "12958465",
@@ -105,7 +105,7 @@
             "value": 2130,
             "symbol": "ml"
         },
-	"isPrimary": false
+	"isPackageable": false
     },
     {
         "number": "44250884",
@@ -117,6 +117,6 @@
             "value": 4260,
             "symbol": "ml"
         },
-	"isPrimary": false
+	"isPackageable": false
     }
 ]
