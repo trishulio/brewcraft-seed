@@ -1,7 +1,8 @@
 [
    {
       "name":"Fermenter 1",
-      "type":"Fermenter",
+      "typeId":2,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -10,7 +11,8 @@
    },
    {
       "name":"Fermenter 2",
-      "type":"Fermenter",
+      "typeId":2,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -19,7 +21,8 @@
    },
    {
       "name":"Fermenter 3",
-      "type":"Fermenter",
+      "typeId":2,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -28,7 +31,8 @@
    },
    {
       "name":"Kettle 1",
-      "type":"Boil Kettle",
+      "typeId":1,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -37,7 +41,8 @@
    },
    {
       "name":"Kettle 2",
-      "type":"Boil Kettle",
+      "typeId":1,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -46,7 +51,8 @@
    },
    {
       "name":"Kettle 3",
-      "type":"Boil Kettle",
+      "typeId":1,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -55,7 +61,8 @@
    },
    {
       "name":"Mix Tank 1",
-      "type":"Mix Tank",
+      "typeId":4,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -64,7 +71,8 @@
    },
    {
       "name":"Mix Tank 2",
-      "type":"Mix Tank",
+      "typeId":4,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -73,7 +81,8 @@
    },
    {
       "name":"Mix Tank 3",
-      "type":"Mix Tank",
+      "typeId":4,
+      "facilityId":{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -82,7 +91,8 @@
    },
    {
       "name":"Tote 1",
-      "type":"Tote",
+      "typeId":5,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"l",
@@ -91,7 +101,8 @@
    },
    {
       "name":"Tote 2",
-      "type":"Tote",
+      "typeId":5,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"l",
@@ -100,7 +111,8 @@
    },
    {
       "name":"Whirl Pool 1",
-      "type":"Whirl Pool",
+      "typeId":6,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -109,7 +121,8 @@
    },
    {
       "name":"Whirl Pool 2",
-      "type":"Whirl Pool",
+      "typeId":6,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -118,7 +131,8 @@
    },
    {
       "name":"Brite Tank 1",
-      "type":"Brite Tank",
+      "typeId":8,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
@@ -127,7 +141,8 @@
    },
    {
       "name":"Brite Tank 2",
-      "type":"Brite Tank",
+      "typeId":8,
+      "facilityId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}",
       "status":"Active",
       "maxCapacity":{
          "symbol":"hl",
