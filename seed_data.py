@@ -40,7 +40,6 @@ dag = DAG('brewcraft_seed_data',
 start_task = DummyOperator(task_id='start',retries=3, dag=dag)
 
 start_facility_requests_task = DummyOperator(task_id='start_facility_requests',retries=3, dag=dag)
-start_equipment_requests_task = DummyOperator(task_id='start_equipment_requests',retries=3, dag=dag)
 start_storage_requests_task = DummyOperator(task_id='start_storage_requests',retries=3, dag=dag)
 start_supplier_requests_task = DummyOperator(task_id='start_supplier_requests',retries=3, dag=dag)
 start_supplier_contact_requests_task = DummyOperator(task_id='start_supplier_contact_requests',retries=3, dag=dag)
@@ -49,7 +48,6 @@ start_product_requests_task = DummyOperator(task_id='start_product_requests',ret
 start_sku_requests_task = DummyOperator(task_id='start_sku_requests',retries=3, dag=dag)
 
 facility_requests_complete_task = DummyOperator(task_id='facility_requests_complete',retries=3, dag=dag)
-equipment_requests_complete_task = DummyOperator(task_id='equipment_requests_complete',retries=3, dag=dag)
 storage_requests_complete_task = DummyOperator(task_id='storage_requests_complete',retries=3, dag=dag)
 supplier_requests_complete_task = DummyOperator(task_id='supplier_requests_complete',retries=3, dag=dag)
 supplier_contact_requests_complete_task = DummyOperator(task_id='supplier_contact_requests_complete',retries=3, dag=dag)
@@ -75,19 +73,19 @@ for idx,request in enumerate(add_facility_requests):
 
 
 add_equipment_requests = parseRequestsFromFile("equipment.json")
-equipmentTasks = []
 for idx,request in enumerate(add_equipment_requests):
-	equipmentTasks.append(SimpleHttpOperator(
-		task_id='add_equipment_request_' + str(idx),
-		endpoint='/api/v1/facilities/' + f'{{{{task_instance.xcom_pull(task_ids="{facilityTasks[0].task_id}")["id"]}}}}' +'/equipment',
-		method='POST',
-		response_filter=lambda response: response.json(),
-		data=json.dumps(request),
-		headers={"Content-Type": "application/json", "Authorization": "Bearer " + '{{ dag_run.conf["jwt"] }}'},
-		http_conn_id='brewcraft',
-		dag=dag))
-	start_equipment_requests_task >> equipmentTasks[idx]
-	equipmentTasks[idx] >> equipment_requests_complete_task
+	#Inject facilityId into equipment payload
+	request["facilityId"] = request["facilityId"].format(facilityTasks[0].task_id)
+
+equipment_task = SimpleHttpOperator(
+	task_id='add_equipment_request',
+	endpoint='/api/v1/equipment',
+	method='POST',
+	response_filter=lambda response: response.json(),
+	data=json.dumps(add_equipment_requests),
+	headers={"Content-Type": "application/json", "Authorization": "Bearer " + '{{ dag_run.conf["jwt"] }}'},
+	http_conn_id='brewcraft',
+	dag=dag)
 
 
 add_storage_requests = parseRequestsFromFile("storages.json")
@@ -231,7 +229,7 @@ start_task >> start_supplier_requests_task
 start_task >> start_material_requests_task
 start_task >> start_product_requests_task
 
-facility_requests_complete_task >> start_equipment_requests_task
+facility_requests_complete_task >> equipment_task
 facility_requests_complete_task >> start_storage_requests_task
 
 product_requests_complete_task >> start_sku_requests_task
