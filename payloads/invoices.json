@@ -24,10 +24,15 @@
                "currency":"CAD",
                "amount":34
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":6
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -42,10 +47,15 @@
                "currency":"CAD",
                "amount":16.25
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":3.50
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -77,10 +87,15 @@
                "currency":"CAD",
                "amount":14.44
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":6
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -95,10 +110,15 @@
                "currency":"CAD",
                "amount":55.29
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":8.14
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -130,10 +150,15 @@
                "currency":"CAD",
                "amount":44
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":6
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -148,10 +173,15 @@
                "currency":"CAD",
                "amount":22.13
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":4.94
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -183,10 +213,15 @@
                "currency":"CAD",
                "amount":34
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":6
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -201,10 +236,15 @@
                "currency":"CAD",
                "amount":34
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":6
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -236,10 +276,15 @@
                "currency":"CAD",
                "amount":14.41
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":2.24
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -254,10 +299,15 @@
                "currency":"CAD",
                "amount":15.55
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":2.47
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -289,10 +339,15 @@
                "currency":"CAD",
                "amount":22
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":6
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -307,10 +362,15 @@
                "currency":"CAD",
                "amount":16.13
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":3.30
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -342,10 +402,15 @@
                "currency":"CAD",
                "amount":12.12
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":2.22
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -360,10 +425,15 @@
                "currency":"CAD",
                "amount":12.22
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":2.21
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -395,10 +465,15 @@
                "currency":"CAD",
                "amount":73.12
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":8.44
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -413,10 +488,15 @@
                "currency":"CAD",
                "amount":60.99
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":5.55
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -448,10 +528,15 @@
                "currency":"CAD",
                "amount":125.50
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":11.30
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -466,10 +551,15 @@
                "currency":"CAD",
                "amount":225.99
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":18.76
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -501,10 +591,15 @@
                "currency":"CAD",
                "amount":30.55
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":4.12
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -519,10 +614,15 @@
                "currency":"CAD",
                "amount":131.33
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":12.22
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -554,10 +654,15 @@
                "currency":"CAD",
                "amount":450.20
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":31.25
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -572,10 +677,15 @@
                "currency":"CAD",
                "amount":30.50
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":4.43
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -607,10 +717,15 @@
                "currency":"CAD",
                "amount":12.99
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":3.10
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -625,10 +740,15 @@
                "currency":"CAD",
                "amount":62.99
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":5.55
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -660,10 +780,15 @@
                "currency":"CAD",
                "amount":625.99
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":64.23
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -678,10 +803,15 @@
                "currency":"CAD",
                "amount":806.24
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":75.33
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -713,10 +843,15 @@
                "currency":"CAD",
                "amount":101.12
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":11.14
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -731,10 +866,15 @@
                "currency":"CAD",
                "amount":675.50
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":55.90
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -766,10 +906,15 @@
                "currency":"CAD",
                "amount":44.25
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":5.41
+            "tax": {
+               "gstRate": {
+                   "value": 0
+               },
+               "pstRate": {
+                   "value": 0
+               },
+               "hstRate": {
+                   "value": 0.1
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
@@ -784,10 +929,15 @@
                "currency":"CAD",
                "amount":245.15
             },
-            "tax":{
-               "amount":{
-                  "currency":"CAD",
-                  "amount":27.42
+            "tax": {
+               "gstRate": {
+                   "value": 0.05
+               },
+               "pstRate": {
+                   "value": 0.07
+               },
+               "hstRate": {
+                   "value": 0
                }
             },
             "materialId":"{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
