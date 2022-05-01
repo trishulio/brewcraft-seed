@@ -35,11 +35,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -62,11 +67,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -116,11 +126,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -143,11 +158,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -197,11 +217,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -224,11 +249,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -278,11 +308,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -305,11 +340,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -359,11 +399,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -386,11 +431,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -440,11 +490,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -467,11 +522,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -521,11 +581,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -548,11 +613,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -602,11 +672,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -629,11 +704,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -683,11 +763,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -710,11 +795,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -764,11 +854,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -791,11 +886,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -845,11 +945,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -872,11 +977,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -926,11 +1036,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -953,11 +1068,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1007,11 +1127,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1034,11 +1159,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1088,11 +1218,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1115,11 +1250,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1169,11 +1309,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1196,11 +1341,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1250,11 +1400,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1277,11 +1432,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1331,11 +1491,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1358,11 +1523,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1412,11 +1582,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1439,11 +1614,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1493,11 +1673,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1520,11 +1705,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1574,11 +1764,16 @@
                         "amount": 100
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 10
+                        "gstRate": {
+                            "value": 0
+                        },
+                        "pstRate": {
+                            "value": 0
+                        },
+                        "hstRate": {
+                            "value": 0.1
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
@@ -1601,11 +1796,16 @@
                         "amount": 200
                     },
                     "tax": {
-                        "amount": {
-                            "currency": "CAD",
-                            "amount": 20
+                        "gstRate": {
+                            "value": 0.05
+                        },
+                        "pstRate": {
+                            "value": 0.07
+                        },
+                        "hstRate": {
+                            "value": 0
                         }
-                    },
+                     },
                     "materialId": "{{{{task_instance.xcom_pull(task_ids='{}')['id']}}}}"
                 },
                 "materialLot": {
