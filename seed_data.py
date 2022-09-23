@@ -34,6 +34,7 @@ default_args = {
 }
 
 dag = DAG('brewcraft_seed_data',
+    max_active_tasks=20,
     schedule_interval=None,
     default_args=default_args)
 
